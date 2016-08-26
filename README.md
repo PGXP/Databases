@@ -2,7 +2,7 @@
 
 Tabela de usuários
 
-
+```bash
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) DEFAULT NULL,
@@ -15,3 +15,4 @@ CREATE TABLE `usuario` (
   KEY `email_idx` (`email`),
   KEY `cpf_idx` (`cpf`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+```
