@@ -2,14 +2,16 @@
 
 Tabela de usuários
 
+
 CREATE TABLE `usuario` (
-  `id` INT NOT NULL,
-  `nome` VARCHAR(100) NULL,
-  `perfil` VARCHAR(100) NULL,
-  `email` VARCHAR(100) NULL,
-  `cpf` VARCHAR(100) NULL,
-  `fone` VARCHAR(100) NULL,
-  `senha` VARCHAR(100) NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) DEFAULT NULL,
+  `perfil` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `cpf` varchar(100) DEFAULT NULL,
+  `fone` varchar(100) DEFAULT NULL,
+  `senha` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  INDEX `email_idx` (`email` ASC),
-  INDEX `cpf_idx` (`cpf` ASC));
+  KEY `email_idx` (`email`),
+  KEY `cpf_idx` (`cpf`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
